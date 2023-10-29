@@ -37,7 +37,9 @@ const listEl = document.querySelector(".gallery");
 function createGalleryItem(item) {
   const listItemEl = document.createElement("li");
   listItemEl.classList.add("gallery__item");
-  listItemEl.innerHTML = `<a class='gallery__link' href='${item.original}'>
+  listItemEl.innerHTML = `<a 
+    class='gallery__link' 
+    href='${item.original}'>
       <img 
         class='gallery__image' 
         src='${item.preview}' 
